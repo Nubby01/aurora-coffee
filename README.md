@@ -39,7 +39,9 @@ Crear una landing page moderna que permita:
 - Galería adaptable con visor de imágenes a pantalla completa.
 - Opiniones de clientes.
 - Formulario de contacto con validación.
+- Enlace a [Aurora Booking](https://aurora-booking-rho.vercel.app/) para reservas detalladas.
 - Mapa de ubicación en Punta Arenas.
+- Crédito de diseño y desarrollo en el footer.
 - Animaciones de aparición mediante `IntersectionObserver`.
 - Navegación activa según la sección visible.
 - Botón para volver al inicio.
@@ -118,6 +120,7 @@ AuroraCoffee/
 ## 🚀 Demo
 
 - [Ver sitio web](https://aurora-coffee-bay.vercel.app/)
+- [Sistema de reservas (Aurora Booking)](https://aurora-booking-rho.vercel.app/)
 - [Ver repositorio](https://github.com/Nubby01/aurora-coffee)
 
 ---
@@ -153,10 +156,11 @@ Luego visita `http://localhost:8000`.
 - [x] Animaciones e interacciones.
 - [x] Galería con lightbox.
 - [x] Formulario de contacto.
+- [x] Enlace a Aurora Booking.
 - [x] Mapa de ubicación.
 - [ ] Modo oscuro.
 - [ ] Internacionalización.
-- [ ] Sistema de reservas conectado a un backend.
+- [ ] Integración directa del backend de reservas.
 
 ---
 

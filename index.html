@@ -15,7 +15,6 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>" />
 </head>
 <body>
-    <!-- header chiquito con el menu en pag commpleta -->
     <header class="site-header" id="top">
         <a class="brand" href="#top" aria-label="Aurora Coffee, ir al inicio">
             <span class="brand__mark" aria-hidden="true">✿</span>
@@ -40,7 +39,6 @@
     </header>
 
     <main>
-        <!-- inicio y hero-->
         <section class="hero" id="inicio">
             <div class="hero__petals" aria-hidden="true"></div>
             <div class="hero__content reveal">
@@ -69,7 +67,6 @@
             </div>
         </section>
 
-        <!-- marcas como de la empresa -->
         <div class="marquee" aria-hidden="true">
             <div class="marquee__track">
                 <span>☕ Espresso</span><span>✿ Matcha Latte</span><span>🍡 Mochi</span>
@@ -79,7 +76,6 @@
             </div>
         </div>
 
-        <!-- menu en pesos cl -->
         <section class="section menu" id="menu">
             <header class="section__head reveal">
                 <p class="eyebrow">Nuestra carta · メニュー</p>
@@ -120,7 +116,6 @@
             </div>
         </section>
 
-        <!-- los prodcutos destacados de la empresa-->
         <section class="section featured" id="destacados">
             <header class="section__head reveal">
                 <p class="eyebrow">Favoritos de la casa · おすすめ</p>
@@ -179,7 +174,6 @@
             </div>
         </section>
 
-        <!-- quienes somos, nuuestra historia -->
         <section class="section story" id="historia">
             <div class="story__grid">
                 <div class="story__visual reveal" aria-hidden="true">
@@ -210,7 +204,6 @@
             </div>
         </section>
 
-        <!-- galeria de imagenes no en carrusel sino normal -->
         <section class="section gallery" id="galeria">
             <header class="section__head reveal">
                 <p class="eyebrow">Un vistazo · ギャラリー</p>
@@ -250,7 +243,6 @@
             </div>
         </section>
 
-        <!-- reseñas opiniiones -->
         <section class="section reviews" id="opiniones">
             <header class="section__head reveal">
                 <p class="eyebrow">Lo que dicen · お客様の声</p>
@@ -279,13 +271,15 @@
             </div>
         </section>
 
-        <!-- contacto  y ubicacion -->
         <section class="section contact" id="contacto">
             <div class="contact__grid">
                 <div class="contact__info reveal">
                     <p class="eyebrow">Ven a visitarnos · お問い合わせ</p>
                     <h2 class="section__title">Reserva tu mesa</h2>
                     <p class="section__sub">Escríbenos y te confirmamos en menos de 24 horas. También puedes pasar sin reserva.</p>
+                    <p class="contact__booking-link">
+                        <a href="https://aurora-booking-rho.vercel.app/" target="_blank" rel="noopener noreferrer">Reserva detallada aqui</a>
+                    </p>
 
                     <form class="contact__form" novalidate>
                         <div class="field">
@@ -331,7 +325,6 @@
         </section>
     </main>
 
-    <!-- footer -->
     <footer class="site-footer">
         <div class="site-footer__top">
             <div class="brand brand--footer">
@@ -351,12 +344,15 @@
                 <a href="https://www.tiktok.com/@auroracoffee.cl" target="_blank" rel="noopener noreferrer" aria-label="TikTok de Aurora Coffee">TikTok</a>
             </div>
         </div>
-        <p class="site-footer__copy">© <span id="year"></span> Aurora Coffee · Hecho con ☕ y cariño.</p>
+        <p class="site-footer__copy">
+            © <span id="year"></span> Aurora Coffee · Hecho con ☕ y cariño.<br />
+            Diseño y desarrollo:
+            <a href="https://github.com/Nubby01" target="_blank" rel="noopener noreferrer">Anthara Sáez</a>
+        </p>
     </footer>
 
     <button class="to-top" id="toTop" aria-label="Volver arriba" title="Volver arriba">↑</button>
 
-    <!--  Lighbox -->
     <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
         <button class="lightbox__close" id="lightboxClose" aria-label="Cerrar imagen">✕</button>
         <img class="lightbox__img" id="lightboxImg" src="" alt="" />

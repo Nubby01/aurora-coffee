@@ -1,6 +1,3 @@
-/*
-   AURORA COFFEE · script.js
-   Menú móvil, scroll reveal, nav activo, pétalos y formulario */
 (function () {
     "use strict";
 
@@ -8,11 +5,9 @@
         "(prefers-reduced-motion: reduce)"
     ).matches;
 
-    /* año dinámico en el footer */
     const yearEl = document.getElementById("year");
     if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-    /* header sombra al hacer scroll*/
     const header = document.querySelector(".site-header");
     const toTop = document.getElementById("toTop");
 
@@ -30,7 +25,6 @@
         });
     }
 
-    /* menu movil */
     const toggle = document.querySelector(".nav__toggle");
     const menu = document.getElementById("nav-menu");
 
@@ -50,12 +44,10 @@
             );
         });
 
-        // cerrar al pulsar un enlace
         menu.querySelectorAll("a").forEach((link) => {
             link.addEventListener("click", closeMenu);
         });
 
-        // cerrar con escape
         document.addEventListener("keydown", (e) => {
             if (e.key === "Escape" && menu.classList.contains("is-open")) {
                 closeMenu();
@@ -63,7 +55,6 @@
             }
         });
 
-        // cerrar al hacer click fuera
         document.addEventListener("click", (e) => {
             if (
                 menu.classList.contains("is-open") &&
@@ -75,7 +66,6 @@
         });
     }
 
-    /* scroll reveal con intersectionObserver */
     const revealEls = document.querySelectorAll(".reveal");
 
     if ("IntersectionObserver" in window && !prefersReducedMotion) {
@@ -83,7 +73,6 @@
             (entries, observer) => {
                 entries.forEach((entry, i) => {
                     if (entry.isIntersecting) {
-                        // pequeño escalonado entre elementos hermanos visibles
                         entry.target.style.transitionDelay = `${(i % 4) * 80}ms`;
                         entry.target.classList.add("is-visible");
                         observer.unobserve(entry.target);
@@ -97,7 +86,6 @@
         revealEls.forEach((el) => el.classList.add("is-visible"));
     }
 
-    /* nav activo según la sección visible*/
     const sections = document.querySelectorAll("main section[id]");
     const navLinks = document.querySelectorAll('.nav__menu a[href^="#"]');
 
@@ -121,7 +109,6 @@
         sections.forEach((s) => spy.observe(s));
     }
 
-    /* petalos de sakura cayendo  */
     const petalContainer = document.querySelector(".hero__petals");
     const petalColors = ["#e9b8b0", "#f6dcd8", "#c98a7a", "#efe3d3"];
 
@@ -146,7 +133,6 @@
         setInterval(spawnPetal, 1400);
     }
 
-    /* formulario de contacto */
     const form = document.querySelector(".contact__form");
     const status = document.querySelector(".form__status");
 
@@ -173,7 +159,6 @@
         });
     }
 
-    /* Galería, productos destacados y lightbox */
     const lightboxTriggers = document.querySelectorAll(".gallery__item, .card__art");
     const lightbox = document.getElementById("lightbox");
     const lightboxImg = document.getElementById("lightboxImg");
