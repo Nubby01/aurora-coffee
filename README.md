@@ -69,6 +69,7 @@ AuroraCoffee/
 │   ├── barrasdeespresso.png
 │   ├── capptura-inicio.png
 │   ├── captura-contacto.png
+│   ├── captura-destacados.png
 │   ├── captura-galeria.png
 │   ├── captura-menu.png
 │   ├── ceremoniadelmatcha.png
@@ -99,6 +100,10 @@ AuroraCoffee/
 ### Menú
 
 ![Menú de Aurora Coffee](assets/captura-menu.png)
+
+### Productos destacados
+
+![Productos destacados de Aurora Coffee](assets/captura-destacados.png)
 
 ### Galería
 
